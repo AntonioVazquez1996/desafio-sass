@@ -1,0 +1,188 @@
+/*variables*/
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* ESTILOS DE HEADER */
+header {
+  border: solid 5px #966a0c;
+  background-color: #e1ee9b; }
+  header h1 {
+    padding: 1.2rem 0;
+    margin: 10px;
+    color: #703f1b;
+    font-size: 3em;
+    font-family: 'Lobster', cursive; }
+  header nav {
+    margin: 0.3em;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.4em;
+    font-weight: bold; }
+  header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+/* ESTILOS DE MAINS*/
+main {
+  border: solid 5px #966a0c;
+  padding: 2em;
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/sun-pattern.png); }
+  main .texto-main {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    margin: 0 2em; }
+  main .imagen-main-uno {
+    max-width: 25em;
+    max-height: 25em; }
+  main .imagen-main-dos {
+    max-width: 25em;
+    max-height: 25em;
+    border-radius: 16em; }
+  main .galeria-productos {
+    padding-left: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em; }
+  main .DescripcionProductos {
+    min-height: 3em;
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: 'Smooch', cursive;
+    font-weight: bold; }
+  main .productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f1f8c8;
+    border: solid 4px #966a0c;
+    border-radius: 2em;
+    width: 18em;
+    height: 28em; }
+  main .productos img {
+    border: solid 2px #966a0c;
+    border-radius: 1em;
+    height: 300px;
+    width: 90%; }
+  main .PreciosProductos {
+    padding: 5px; }
+
+/*ESTILOS FOOTER  */
+footer {
+  grid-area: footer;
+  border: solid 5px #966a0c;
+  background-color: #e1ee9b; }
+  footer p {
+    text-align: center;
+    font-size: 1.5em;
+    color: #0e550e; }
+  footer .contactanos-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.8em; }
+  footer .redes {
+    padding: 0.8em;
+    margin: 1em;
+    border: inset 3px #59aa59;
+    border-radius: 15px;
+    background-color: #e1ebab; }
+  footer i {
+    font-size: 2em; }
+
+/*Estilos usados todo el documento */
+/* clase para centrar*/
+.centrado {
+  text-align: center; }
+
+/* clase para dar margen en eje Y */
+.margen {
+  margin: 22px 0; }
+
+/* elimino estilos a links */
+a {
+  text-decoration: none;
+  color: #09421c; }
+
+/* sin estilos en listas */
+ul {
+  list-style-type: none; }
+
+/* estilo para titulos */
+.titulos {
+  margin: 2rem;
+  font-family: 'Macondo', cursive;
+  font-size: 1.9rem; }
+
+/* MEDIA QUERIE MIN-768PX */
+@media screen and (min-width: 768px) {
+  /* ESTILOS DE HEADER */
+  header h1 {
+    text-decoration: underline; }
+  header .navegador-header {
+    display: flex;
+    justify-content: space-around; }
+  header nav ul li {
+    border: outset 4px #f7c55b;
+    border-radius: 10px;
+    background-color: #e3f581; }
+    header nav ul li:hover {
+      background-color: #ffd67d;
+      color: black; }
+  /* ESTILOS DE MAINS*/
+  .texto-main {
+    font-size: 1.4em; }
+  .imagen-main-dos {
+    border-radius: 3.2em; }
+  /*ESTILOS FOOTER  */
+  footer .contactanos-footer {
+    column-gap: 11em;
+    margin: 2em; }
+  footer i:hover {
+    color: #5f6e29; }
+  footer .redes:hover {
+    background-color: #ffd67d; }
+  /*ESTILOS GLOBALES */
+  .titulos {
+    font-size: 2.2rem; } }
+
+/* MEDIA QUERIE MIN-992PX */
+@media screen and (min-width: 992px) {
+  /* ESTILOS DE HEADER */
+  header {
+    padding-bottom: 1rem; }
+    header .header {
+      flex-direction: column;
+      align-items: center; }
+  /* ESTILOS DE MAINS*/
+  .imagen-main-uno {
+    max-width: 25em;
+    max-height: 25em;
+    display: inline;
+    margin-left: 1em;
+    border-radius: 3em; }
+  .texto-main {
+    font-size: 1.6em; }
+  .nosotros {
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .objetivos {
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  /*ESTILOS FOOTER  */
+  footer {
+    background-image: url("../Imagenes/Logo-LuzDeSol.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom; }
+  /*ESTILOS GLOBALES */
+  .titulos {
+    font-size: 2.4rem; } }

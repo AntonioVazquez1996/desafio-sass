@@ -1,0 +1,321 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ESTILOS DE HEADER */
+header {
+    grid-area: header;
+    border: solid 5px rgb(150, 106, 12);
+    background-color: rgb(225, 238, 155);
+}
+header h1 {
+    padding: 1.2rem 0;
+    margin: 10px;
+    color: rgb(112, 63, 27);
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+}
+header nav {
+    margin: 0.3em;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ESTILOS DE MAINS*/
+main {
+    border: solid 5px rgb(150, 106, 12);
+    padding: 2em;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/sun-pattern.png); 
+}
+.texto-main {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    margin: 0 2em;
+}
+.imagen-main-uno {
+    max-width: 25em;
+    max-height: 25em;
+}
+.imagen-main-dos {
+    max-width: 25em;
+    max-height: 25em;
+    border-radius: 16em;
+}
+.galeria-productos {
+    padding-left: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.DescripcionProductos {
+    min-height: 3em;
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: 'Smooch', cursive;
+    font-weight: bold;
+}
+.productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(241, 248, 200);
+    border: solid 4px rgb(150, 106, 12);
+    border-radius: 2em;
+    width: 18em;
+    height: 28em;
+}
+.productos img {
+    border: solid 2px rgb(150, 106, 12);
+    border-radius: 1em;
+    height: 300px;
+    width: 90%;
+}
+.PreciosProductos {
+    padding: 5px;
+}
+
+ /*ESTILOS DE MAIN-PAGES*/
+
+/*ESTILOS FOOTER  */
+footer {
+    grid-area: footer;
+    border: solid 5px rgb(150, 106, 12);
+    background-color: rgb(225, 238, 155);
+}
+footer p {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(14, 85, 14);
+}
+.contactanos-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.8em;
+}
+.redes {
+    padding: 0.8em;
+    margin: 1em;
+    border: inset 3px rgb(89, 170, 89);
+    border-radius: 15px;
+    background-color: rgb(225, 235, 171);
+}
+footer i {
+    font-size: 2em;
+}
+
+
+
+
+/*Estilos usados todo el documento */
+/* clase para centrar*/
+.centrado {
+    text-align: center;
+}
+/* clase para dar margen en eje Y */
+.margen {
+    margin: 22px 0;
+}
+/* elimino estilos a links */
+a {
+    text-decoration: none;
+    color: rgb(9, 66, 28);
+}
+/* sin estilos en listas */
+ul {
+    list-style-type: none;
+ }
+/* estilo para titulos */
+.titulos {
+    margin: 2rem;
+    font-family: 'Macondo', cursive;
+    font-size: 1.9rem;
+}
+
+
+/* MEDIA QUERIE MIN-768PX */
+
+@media screen and (min-width:768px) {
+
+    header h1 {
+        text-decoration: underline;
+    }
+    .navegador-header {
+        display: flex;
+        justify-content: space-around;
+    }
+    .texto-main {
+        font-size: 1.4em;
+    }
+    .titulos {
+        font-size: 2.2rem;
+    }
+    .imagen-main-dos {
+        border-radius: 3.2em;
+    }
+    .contactanos-footer {
+        column-gap: 11em;
+        margin: 2em;
+    }
+    header nav ul li {
+        border: outset 4px rgb(247, 197, 91);
+        border-radius: 10px;
+        background-color: rgb(227, 245, 129);
+    }
+    header nav ul li:hover {
+        background-color: rgb(255, 214, 125);
+        color: black;
+    }
+    .redes:hover  {
+        background-color: rgb(255, 214, 125);
+    }
+    footer i:hover {
+        color: rgb(95, 110, 41);
+
+    }
+}
+
+
+
+/* MEDIA QUERIE MIN-992PX */
+
+@media screen and (min-width:992px) {
+    header {
+        padding-bottom: 1rem;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulos {
+        font-size: 2.4rem;
+    }
+    .imagen-main-uno {
+        max-width: 25em;
+        max-height: 25em;
+        display: inline;
+        margin-left: 1em;
+        border-radius: 3em;
+    }
+    .texto-main {
+        font-size: 1.6em;
+    }
+    .nosotros {
+        text-align: justify;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .objetivos {
+        text-align: justify;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer {
+        background-image: url("../Imagenes/Logo-LuzDeSol.jpg");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NO TENER EN CUENTA , PRACTICAS
+
+.contenedor {
+    display: grid;
+    grid-template-areas: "header header"
+                         "section-uno section-uno"
+                         "section-dos section-dos"
+                         "footer ";
+}
+
+.section-uno {
+    grid-area: section-uno;
+}
+
+.section-dos {
+    grid-area: section-dos;
+}
+*/ 
+
+
+
+
+
+    /*
+    .contenedorr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "main-titulo main-titulo"
+                             "articulo-uno articulo-dos"
+                             "articulo-uno articulo-dos";
+        align-items: ;
+    }
+    
+    .main-titulo {
+        grid-area: main-titulo;
+    }
+    
+    .articulo-uno {
+        grid-area: articulo-uno;
+    }
+    
+    .articulo-dos {
+        grid-area: articulo-dos;
+    }
+    .imagen-main-uno {
+        display: inline;
+    }*/
+    
+
+
+
+/*
+    .contenedor {
+        grid-template-areas: "header header"
+                             "section-uno section-dos"
+                             "section-uno section-dos"
+                             "footer footer";
+    }
+    
+
+
+}
+
+
+
+.section-uno p {
+    text-align: justify;
+}
+
+
+
+
+*/
