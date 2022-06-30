@@ -1,6 +1,8 @@
-//import
+//imports
 
 @import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/extends";
 
 /* reset */
 *{
@@ -27,9 +29,7 @@ header {
         font-weight: bold;
     }
     .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend %flex;
     }
 }
 
@@ -55,9 +55,7 @@ main {
     }
     .galeria-productos {
         padding-left: 2em;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        @extend %flex;
         flex-wrap: wrap;
         gap: 2em;
     }
@@ -69,21 +67,17 @@ main {
         font-weight: bold;
     }
     .productos {
-        display: flex;
+        @extend %flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
         background-color: rgb(241, 248, 200);
         border: solid 4px rgb(150, 106, 12);
         border-radius: 2em;
-        width: 18em;
-        height: 28em;
+        @include sizes(18em, 28em );
     }
     .productos img {
         border: solid 2px rgb(150, 106, 12);
         border-radius: 1em;
-        height: 300px;
-        width: 90%;
+        @include sizes(90%, 300px );
     }
     .PreciosProductos {
         padding: 5px;
@@ -93,7 +87,6 @@ main {
 /*ESTILOS FOOTER  */
 
 footer {
-    grid-area: footer;
     border: solid 5px rgb(150, 106, 12);
     background-color: rgb(225, 238, 155);
     p {
@@ -226,9 +219,7 @@ header {
 }
 .objetivos {
     text-align: justify;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %flex;
 }
 
 /*ESTILOS FOOTER  */

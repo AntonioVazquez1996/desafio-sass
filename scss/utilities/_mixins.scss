@@ -1,0 +1,12 @@
+/*  MIXINS   */
+
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
